@@ -1,0 +1,25 @@
+type Query {
+  "Lista de desarroladores"
+  users: [User!]!
+  "Desarrollador seleccionado mediante el ID"
+  user(id: ID!): User
+  "Lista de lenguajes programación"
+  languages: [Language!]!
+  "Lenguaje de programación seleccionado mediante el ID"
+  language(id: ID!): Language
+}
+
+type Mutation {
+  "Añadir usuario"
+  addUser(user: UserInput!): String
+  "Añadir lenguaje"
+  addLanguage(name: String!): String
+  "Actualizar usuario seleccionado mediante ID"
+  updateUser(user: UserInput!): String
+  "Actualizar lenguaje de programación seleccionado mediante ID"
+  updateLanguage(id: ID!, name: String!): String
+  "Eliminar usuario seleccionado mediante ID"
+  deleteUser(id: ID!): String
+  "Actualizar lenguaje de programación seleccionado mediante ID"
+  deleteLanguage(id: ID!): String
+}
