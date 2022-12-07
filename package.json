@@ -33,7 +33,7 @@
     "graphql-import-node": "0.0.4",
     "graphql-merge-resolvers": "^1.1.16",
     "graphql-playground-middleware-express": "^1.7.18",
-    "graphql-tools": "^6.0.14",
+    "graphql-tools": "^6.2.6",
     "http": "0.0.0",
     "mysql": "^2.18.1",
     "ncp": "^2.0.0",
